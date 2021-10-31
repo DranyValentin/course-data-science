@@ -42,7 +42,7 @@ if (minutes < 10):
 if (hours < 10):
     hours = '0' + str(hours)
     
-print(f'{hours}:{minutes}:{seconds}')
+print(f'{hours:02}:{minutes:02}:{seconds:02}')
 
 
 ### 3. Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn.
