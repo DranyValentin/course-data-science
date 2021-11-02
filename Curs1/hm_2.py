@@ -96,7 +96,7 @@ for index, word in enumerate(words):
 rating = [7,5,3,3,2]
 num = int(input('Введите натуральное число: '))
 
-result = list(rating)
+result = rating
 result.append(num)
 result.sort(reverse=True)
 result = ', '.join(str(value) for value in result)
@@ -133,7 +133,7 @@ for productProp in products[0][1]:
 for product in products:
     for prop, value in product[1].items():
         productInfo[prop].append(value)
-        productInfo[prop] = list(set(productInfo[prop]))
+        productInfo[prop] = (set(productInfo[prop]))
 
 print('\nРезультат')
 print('-----\n')
